@@ -1,12 +1,10 @@
 package tb;
-
 import java.util.*;
 import java.util.Scanner;
 import java.io.*;
 import java.lang.*;
 
-public class Analisa_Ruang_Kelas {
-
+public class Analisa_Ruang_Kelas extends TB {
     Scanner input = new Scanner(System.in);
     TB kelas = new TB();
     
@@ -57,5 +55,58 @@ public class Analisa_Ruang_Kelas {
     }
     System.out.println("Sesuai");
     }
+    
+   
+    public String KenyamananRuangKelas() {
+    System.out.print("Kebisingan : ");
+    String Kebisingan = input.next();
+    kelas.setKebisingan(Kebisingan);
+    kelas.AnalisaKebisingan();
+    System.out.print("Bau : ");
+    String Bau = input.next();
+    kelas.setBau(Bau);
+    kelas.AnalisaBau();
+    System.out.print("Kebocoran : ");
+    String Kebocoran = input.next();
+    kelas.setKebocoran(Kebocoran);
+    kelas.AnalisaKebocoran();
+    System.out.print("Kerusakan : ");
+    String Kerusakan = input.next();
+    kelas.setKerusakan(Kerusakan);
+    kelas.AnalisaKerusakan();
+    System.out.print("Keausan : ");
+    String Keausan = input.next();
+    kelas.setKeausan(Keausan);
+    kelas.AnalisaKeausan();
+    return null;
+
+}
+    public String cetakNyamanKelas(){
+        return null;
+        
+    }
+    
+    public void Keamananruangkelas() {
+    System.out.print("Kekokohan : ");
+    String Kekokohan = input.next();
+    kelas.setKekokohan(Kekokohan);
+    kelas.AnalisaKekokohan();
+    System.out.print("Kunci Pintu dan Jendela : ");
+    String KunciPintuJendela = input.next();
+    kelas.setKunciPintuJendela(KunciPintuJendela);
+    kelas.AnalisaKunciPintuJendela();
+    System.out.print("Bahaya : ");
+    String Bahaya = input.next();
+    kelas.setBahaya(Bahaya);
+    kelas.AnalisaKeamanan();
+    
 }
     
+    public void cetakAmanKelas() {
+        
+    }
+    
+    public void cetakSemuaData(){
+        
+    }
+}
